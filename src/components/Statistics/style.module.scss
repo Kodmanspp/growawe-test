@@ -1,0 +1,59 @@
+.container{
+  padding: 50px 4%;
+  background: #EDF7FF;
+  display: grid;
+  grid-template-areas:
+          "select select"
+          "card top";
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 40px;
+}
+.select{
+  grid-area: select;
+  width: 360px;
+  height: 60px;
+  font-size: 22px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: no-repeat center white url("../../assets/icons/dropIcon.png");
+  background-size: 20px;
+  background-position-x: 90%;
+  border: none;
+}
+.cards{
+  grid-area: card;
+  div + div {
+    margin-top: 20px;
+  }
+}
+.recovered{
+  grid-area: top;
+  background: #1BBC9B;
+  border-radius: 5px;
+  text-align: center;
+  height: min-content;
+  color: white;
+  box-sizing: border-box;
+  padding: 40px 60px;
+  h2{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .text{
+    font-weight: 700;
+    margin: 96px auto;
+    font-size: 100px;
+  }
+  .date{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    border-top: 1px solid white;
+    padding: 20px 0 0;
+  }
+}
